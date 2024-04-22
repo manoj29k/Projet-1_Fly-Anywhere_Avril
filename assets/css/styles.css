@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px;
+    background-color: #D9D9D9;
+}
+
+header > nav> div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > nav> div > :first-child > img{
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+}
+
+header>nav>div>:nth-child(2) ,li>a{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+header>nav>div>ul>li>a{
+    color: white;
+}
+header>nav>div>ul>:first-child> a{
+    color: black;
+}
+
+
+header > nav > div > ul > :nth-child(2) {
+    padding: 10px;
+    background-color: #0B0959;
+    border-radius: 10px;
+    
+}
+header > nav > div > ul > :nth-child(3) {
+    padding: 10px;
+    background-color: #0B0959;
+    border-radius: 10px;
+    
+}
+header > nav > div > ul > :first-child {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main>section>form{
+    display: flex;
+    background-color: #7672e6;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 75vw;
+}
+main>section>:nth-child(2)>ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+main>section>:nth-child(2)>ul>li>input , main>section>:nth-child(2)>input {
+    padding: 10px;
+    width: 260px;
+    height: 50px;
+    border-radius: 10px;
+    border: transparent;
+    outline: none;
+}
+
+main>:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin: 20px;
+    background-color: #0B0959;
+    color: antiquewhite; 
+}
+main>:first-child > h3{
+    padding: 10px;
+    font-size: 25px;
+}
+
+main>:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    margin: 20px;
+}
+
+main>:nth-child(2)>video{
+    height: 700px;
+    width: 95vw;
+}
+    
+
