@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&display=swap');
+/* inconsolata , oswald
+font-family: "Inconsolata", monospace;
+font-family: "Oswald", sans-serif */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header > nav{
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(202, 201, 201);
+}
+
+header > nav > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header > nav > div > :first-child > li  , a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+header > nav > div > :first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+}
+header > nav > div > p{
+    text-align: center;
+    padding-right: 200px;
+    
+    font-size: 40px;
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    
+}
+header > nav > div > :last-child > img{
+    width : 75px;
+    height : 75px;
+    border-radius: 5px;
+}
+
+header > nav > div > ul > :first-child , header > nav > div > ul > :nth-child(2){
+    background-color: #0b0959;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header > nav > div > ul > :last-child{
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+header > nav > div > ul > :last-child > a{
+    color: black;
+}
+
+main > :first-child {
+    display: flex;
+    flex-direction: row;
+    height: 800px;
+    align-items: center;
+    padding: 50px;
+    background-image: url("/assets/img/contact-img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 100px;
+}
+
+main  > :first-child > form {
+    padding: 40px;
+}
+
+main > :first-child > form > ul  {
+    list-style: none;
+    display : flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main > :first-child > form > ul > li > input{
+    height: 60px;
+    width: 500px;
+    outline: none;
+    border: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Inconsolata", monospace;
+}
+main > :first-child > form > ul > :nth-child(5) > input{
+    height: 100px;  
+}
+main > :first-child > form > ul > :last-child > input{
+   width: 250px;
+   color: white;
+   background-color: #0b0959;
+   
+}
+
+main > :nth-child(2){
+    position: relative;
+    top: -400px;
+    left: 800px;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    font-family: "Oswald", sans-serif;
+}
+
+main > :nth-child(3){
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+    gap: 25px;
+    height: 600px;
+    justify-content: center;
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    font-size: 30px;
+    padding-right: 100px;
+    background-image: url("/assets/img/contact-img2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #ffff;
+   
+}
+
+main > :nth-child(3) > :last-child > a >i , main > :nth-child(3) > :last-child{
+    color: white;
+    font-size: 50px;
+     display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+

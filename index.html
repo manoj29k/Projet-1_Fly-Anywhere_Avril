@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="https://fontawesome.com/icons/plane-departure?f=classic&s=solid">
     <script src="/assets/js/main.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -14,7 +15,7 @@
             <div>
                 <a href="#"><img src="/assets/img/logo.jpg" alt="logo"></a>
                 <ul>
-                    <li><a href="#">Contactez-nous</a></li>
+                    <li><a href="/view/contact.html">Contactez-nous</a></li>
                     <li><a href="#">S'INSCRIRE</a></li>
                     <li><a href="#">CONNEXION</a></li>
                 </ul>
@@ -31,16 +32,23 @@
                         onfocus="(this.type='date')"></li>
                     <li><input type="text" placeholder="Arrivée"
                         onfocus="(this.type='date')"></li>
-                        <li><input type="text" placeholder="Nombre de passagers"
-                            onfocus="(this.type='number')"></li>
+                    <li><input type="text" placeholder="Nombre de passagers"
+                            onfocus="(this.type='number')" required></li>
                 </ul>
                 <input type="submit">
             </form>
         </section>
         <section>
-            <video>
-                <source src="/assets/videos/video1.mp4" autoplay loop muted> 
-            </video>
+            <div class="video1">
+                <video autoplay loop muted>
+                  <source src="/assets/videos/video1.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h3>Découvrez les destinations tendances pour vos prochaines vacances </h3>
+            </div>
         </section>
     </main>
     <footer>
