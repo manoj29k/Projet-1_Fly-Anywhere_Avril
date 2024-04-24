@@ -74,12 +74,12 @@ main > :first-child {
     height: 800px;
     align-items: center;
     padding: 50px;
-    background-image: url("/assets/img/contact-img1.jpg");
+    background-image: url("/public/img/contact-img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    top: 100px;
+    top: 90px;
 }
 
 main  > :first-child > form {
@@ -107,7 +107,7 @@ main > :first-child > form > ul > :nth-child(5) > input{
 }
 main > :first-child > form > ul > :last-child > input{
    width: 250px;
-   color: white;
+   color: rgb(255, 255, 255);
    background-color: #0b0959;
    
 }
@@ -124,31 +124,39 @@ main > :nth-child(2){
 
 main > :nth-child(3){
     position: relative;
-    top: 30px;
+    top: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 50px;
-    gap: 25px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
     height: 600px;
-    justify-content: center;
     font-family: "Inconsolata", monospace;
-    font-weight: 700;
-    font-size: 30px;
-    padding-right: 100px;
-    background-image: url("/assets/img/contact-img2.jpg");
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.699), rgba(22, 34, 201, 0.589)), url("/public/img/contact-img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    color: #ffff;
-   
+    color: #000000b2;
 }
 
-main > :nth-child(3) > :last-child > a >i , main > :nth-child(3) > :last-child{
-    color: white;
-    font-size: 50px;
-     display: flex;
-    flex-direction: row;
+main > :nth-child(3) > :first-child{
+    display: flex;
+    padding-top: 70px;
+    
+}
+
+main > :nth-child(3) > :last-child{
+    display: flex;
+    flex-direction: column;
+    padding-top: 170px;
+    font-size: 30px;
+    font-weight: 800;
     gap: 10px;
+}
+
+main > :nth-child(3) > :last-child > p > a > i{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
 }
 
