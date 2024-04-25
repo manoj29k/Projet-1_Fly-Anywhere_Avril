@@ -11,12 +11,18 @@ font-family: "Oswald", sans-serif */
 }
 
 header {
-  padding: 10px;
-  background-color: #d9d9d9;
+  padding: 8px;
+  background-color: #d9d9d96c;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+}
+header > nav {
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 header > nav > div {
@@ -39,31 +45,37 @@ li > a {
   gap: 10px;
   text-decoration: none;
   list-style: none;
-  color: black;
 }
-header > nav > div > ul > li > a {
-  color: white;
-}
+
 header > nav > div > ul > :first-child > a {
   color: black;
+  padding: 10px;
+  border-radius: 10px;
 }
-
-header > nav > div > ul > :nth-child(2) {
+header > nav > div > ul > :nth-child(2) > a{
   padding: 10px;
   background-color: #0b0959;
   border-radius: 10px;
+  color: white;
 }
-header > nav > div > ul > :nth-child(3) {
+header > nav > div > ul > :last-child > a{
   padding: 10px;
   background-color: #0b0959;
   border-radius: 10px;
-}
-header > nav > div > ul > :first-child {
-  padding: 10px;
-  border-radius: 10px;
+  color: white;
 }
 
-main > section > form {
+
+
+.form-block , main , footer{
+  
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+}
+form > ul > li > input{
+  font-family: "Inconsolata", monospace;
+}
+.form-block > form {
   display: flex;
   background-color: #32545f9f;
   flex-direction: row;
@@ -76,15 +88,15 @@ main > section > form {
   width: 80vw;
   margin-top: 20px;
 }
-main > section > :nth-child(2) > ul {
+.form-block > :nth-child(2) > ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
-main > section > :nth-child(2) > ul > li > input,
-main > section > :nth-child(2) > input {
+.form-block > :nth-child(2) > ul > li > input,
+.form-block > :nth-child(2) > input {
   padding: 10px;
   width: 260px;
   height: 50px;
@@ -93,7 +105,7 @@ main > section > :nth-child(2) > input {
   outline: none;
 }
 
-main > section > :nth-child(2) > input {
+main > .form-block > :nth-child(2) > input {
   background-color: #0b0959;
   color: white;
 }
@@ -105,9 +117,8 @@ main > :first-child {
   justify-content: center;
   height: 620px;
   margin: 20px;
-  background-color: transparent;
-  color: rgb(241, 240, 238);
 }
+
 main > :first-child > h3 {
   margin-bottom: 50px;
   font-size: 30px;
@@ -119,9 +130,9 @@ main > :first-child > a {
   margin-top: 50px;
   text-decoration: none;
   color: white;
-  padding: 10px;
-  background-color: #0c09599f;
-  border-radius: 5px;
+  padding: 12px;
+  background-color: #0c0959bb;
+  border-radius: 10px;
 }
 
 .video1 {
@@ -145,33 +156,29 @@ main > :first-child > a {
   z-index: -1;
 }
 
-main > :nth-child(3) {
+.image-block {
   height: 1400px;
-  background-color: #0c0959e0;
-  display: flex;
-  flex-direction: column;
-  
 }
-main > :nth-child(3) > :first-child{
+.image-block > :first-child{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-main > :nth-child(3) > :first-child > h3 {
+.image-block > :first-child > h3 {
   font-size: 30px;
   text-align: center;
   color: rgb(0, 0, 0);
   padding: 20px;
 }
 
-main > :nth-child(3)  > :nth-child(2){
+.image-block  > :nth-child(2){
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   height: 500px;
 }
-main > :nth-child(3)  > :nth-child(2) > a > img {
+.image-block  > :nth-child(2) > a > img {
   height: 500px;
   width: 800px;
   padding-right: 5px;
@@ -180,7 +187,7 @@ main > :nth-child(3)  > :nth-child(2) > a > img {
 }
 
 
-main > :nth-child(3)  > :nth-child(3){
+.image-block  > :nth-child(3){
   display: flex;
   flex-direction: row;
   align-items: center;  
@@ -189,21 +196,21 @@ main > :nth-child(3)  > :nth-child(3){
   height: 800px;
 }
 
-/* main > :nth-child(3)  > :nth-child(3) > div {
-} */
 
-main > :nth-child(3)  > :nth-child(3) > div > :first-child ,
-main > :nth-child(3)  > :nth-child(3) > div > :last-child{
+
+
+.image-block  > :nth-child(3) > div > :first-child ,
+.image-block  > :nth-child(3) > div > :last-child{
   display: flex;
   flex-direction: column;
 }
 
-main > :nth-child(3)  > :nth-child(3) > div > a > img{
+.image-block  > :nth-child(3) > div > a > img{
   height: 400px;
   width: 535px;
   padding: 5px;
 }
-main > :nth-child(3) > :nth-child(3) > :nth-child(2)> a > img {
+.image-block > :nth-child(3) > :nth-child(2)> a > img {
   height: 800px;
 }
 
@@ -219,6 +226,7 @@ main > :nth-child(3) > :nth-child(3) > :nth-child(2)> a > img {
   flex-direction: column;
   height: 500px;
   justify-content: center;
+  font-weight: 300;
 }
 
 .partenaires > div {
@@ -236,4 +244,10 @@ main > :nth-child(3) > :nth-child(3) > :nth-child(2)> a > img {
   padding: 10px;
   margin-left: 325px;
   margin-top: 20px;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  height: 400px;
 }
