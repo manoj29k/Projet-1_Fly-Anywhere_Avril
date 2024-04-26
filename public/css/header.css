@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&display=swap');
+/* inconsolata , oswald
+font-family: "Inconsolata", monospace;
+font-family: "Oswald", sans-serif */
+
+header > nav{
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(202, 201, 201);
+}
+
+header > nav > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header > nav > div > :first-child > li  , a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+header > nav > div > :first-child{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+}
+header > nav > div > p{
+    text-align: center;
+    padding-right: 200px;
+    
+    font-size: 40px;
+    font-family: "Inconsolata", monospace;
+    font-weight: 700;
+    
+}
+header > nav > div > :last-child > img{
+    width : 75px;
+    height : 75px;
+    border-radius: 5px;
+}
+
+header > nav > div > ul > :first-child , header > nav > div > ul > :nth-child(2){
+    background-color: #0b0959;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header > nav > div > ul > :last-child{
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    
+}
+header > nav > div > ul > :last-child > a{
+    color: rgb(0, 0, 0);
+}
+

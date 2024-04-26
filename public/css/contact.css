@@ -8,73 +8,14 @@ font-family: "Oswald", sans-serif */
     box-sizing: border-box;
 }
 
-header > nav{
-    padding: 10px;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    background-color: rgb(202, 201, 201);
-}
 
-header > nav > div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-header > nav > div > :first-child > li  , a{
-    text-decoration: none;
-    color: white;
-    list-style: none;
-}
-header > nav > div > :first-child{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    font-family: "Inconsolata", monospace;
-    font-weight: 400;
-}
-header > nav > div > p{
-    text-align: center;
-    padding-right: 200px;
-    
-    font-size: 40px;
-    font-family: "Inconsolata", monospace;
-    font-weight: 700;
-    
-}
-header > nav > div > :last-child > img{
-    width : 75px;
-    height : 75px;
-    border-radius: 5px;
-}
-
-header > nav > div > ul > :first-child , header > nav > div > ul > :nth-child(2){
-    background-color: #0b0959;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-header > nav > div > ul > :last-child{
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: 600;
-    
-}
-header > nav > div > ul > :last-child > a{
-    color: black;
-}
-
-main > :first-child {
+.form-block {
     display: flex;
     flex-direction: row;
     height: 800px;
     align-items: center;
     padding: 50px;
-    background-image: url("/public/img/contact-img1.jpg");
+    background-image: url("../img/contact-img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -82,18 +23,18 @@ main > :first-child {
     top: 90px;
 }
 
-main  > :first-child > form {
-    padding: 40px;
+.form-block > form {
+   padding: 40px;
 }
 
-main > :first-child > form > ul  {
+.form-block > form > ul  {
     list-style: none;
     display : flex;
     flex-direction: column;
     gap: 15px;
 }
 
-main > :first-child > form > ul > li > input{
+.form-block > form > ul > li > input{
     height: 60px;
     width: 500px;
     outline: none;
@@ -102,17 +43,17 @@ main > :first-child > form > ul > li > input{
     padding: 10px;
     font-family: "Inconsolata", monospace;
 }
-main > :first-child > form > ul > :nth-child(5) > input{
+.form-block > form > ul > :nth-child(5) > input{
     height: 100px;  
 }
-main > :first-child > form > ul > :last-child > input{
+.form-block > form > ul > :last-child > input{
    width: 250px;
    color: rgb(255, 255, 255);
    background-color: #0b0959;
    
 }
 
-main > :nth-child(2){
+.text-image-block{
     position: relative;
     top: -400px;
     left: 800px;
@@ -122,7 +63,7 @@ main > :nth-child(2){
     font-family: "Oswald", sans-serif;
 }
 
-main > :nth-child(3){
+.contact-block{
     position: relative;
     top: 10px;
     display: flex;
@@ -132,20 +73,20 @@ main > :nth-child(3){
     flex-wrap: wrap;
     height: 600px;
     font-family: "Inconsolata", monospace;
-    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.699), rgba(22, 34, 201, 0.589)), url("/public/img/contact-img2.jpg");
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.699), rgba(22, 34, 201, 0.589)), url("../img/contact-img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     color: #000000b2;
 }
 
-main > :nth-child(3) > :first-child{
+.contact-block > :first-child{
     display: flex;
     padding-top: 70px;
     
 }
 
-main > :nth-child(3) > :last-child{
+.contact-block > :last-child{
     display: flex;
     flex-direction: column;
     padding-top: 170px;
@@ -154,9 +95,74 @@ main > :nth-child(3) > :last-child{
     gap: 10px;
 }
 
-main > :nth-child(3) > :last-child > p > a > i{
+.contact-block > :last-child > p > a > i{
     color: #000000;
     font-size: 30px;
     font-weight: 400;
+}
+
+
+@media screen and (max-width: 450px) {
+    .text-image-block{
+        display: none;
+    }
+
+    .form-block {
+        height: 700px;
+        padding: 0px;
+        position: relative;
+        top: 150px;
+    }
+    
+    .form-block > form {
+       padding: 5px;
+    }
+    
+    .form-block > form > ul  {
+        gap: 10px;
+    }
+    
+    .form-block > form > ul > li > input{
+        height: 50px;
+        width: 420px;
+    }
+    .form-block > form > ul > :nth-child(5) > input{
+        height: 100px;  
+    }
+    
+    .contact-block{
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 900px;
+        background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.699), rgba(0, 0, 0, 0.589)), url("/public/img/contact-img2.jpg");
+    }
+    
+    .contact-block > :first-child{
+        display: flex;
+        padding-top: 10px;
+      
+    }
+    
+    .contact-block > :last-child{
+        padding-top: 1px;
+        font-size: 20px;
+        font-weight: 600;
+        gap: 5px;
+        color: white;
+        padding-left: 30px;
+    }
+    
+    .contact-block > :last-child > p > a > i{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400; 
+    }
+    .content-block > :first-child > iframe{
+        width: 100px;
+        height: 200px;
+    }
 }
 

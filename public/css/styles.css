@@ -270,7 +270,7 @@ footer {
 
 
 
-/* media querry */
+/* media querry*/
 
 @media screen and (max-width: 1025px) {
 
@@ -300,7 +300,7 @@ footer {
   .video1 {
     top: 100px;
     height: 80%;
-  }
+  } 
   
   /* image block section*/
   .image-block {
@@ -310,16 +310,16 @@ footer {
     padding: 25px;
   }
   
-  /* first immage div */
+  /* first immage div*/
   .image-block  > :nth-child(2){
     height: 290px; 
   }
   .image-block  > :nth-child(2) > a > img {
     height: 290px;
     width: 500px;
-  }
+  } 
   
-  /* second image div */
+  /* second image div  */
   
   .image-block  > :nth-child(3){
     height: 400px;
@@ -355,6 +355,10 @@ footer {
     margin-left: 25px;
     margin-top: 0px;
   }
+  footer{
+    position: relative;
+  
+  }
   
 }
 
@@ -384,7 +388,7 @@ main > :first-child > a {
 
 /* video section*/
 .video1 {
-  background-image: url(/public/img/mobile-background.jpg) ;
+  background-image: url(../img/mobile-background.jpg) ;
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -393,14 +397,13 @@ main > :first-child > a {
  display: none;
 }
 .video1 {
-  top: 100px;
+  top: 95px;
   height: 90%;
 }
 
 /* image block section*/
 .image-block {
   height: 8px;
-  background-color: #79b7db;
 }
 .image-block > :first-child > h3 {
   font-size: 20px;
@@ -429,6 +432,8 @@ main > :first-child > a {
 /* section partnaires */
 .partenaires{
   height: 400px;
+  position: relative;
+  top: 2000px;
 }
 .partenaires > div > img{
   height: 100px;
@@ -445,5 +450,9 @@ main > :first-child > a {
   margin-left: 25px;
 }
 
-
+footer {
+  position: relative;
+  top: 2050px;
 }
+}
+
