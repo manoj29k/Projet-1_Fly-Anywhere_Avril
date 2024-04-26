@@ -79,6 +79,10 @@ header > nav > div > ul > :last-child > a{
   color: white;
 }
 
+header > nav > div > img{
+  display: none;
+}
+
 
 
 .form-block , main , footer{
@@ -371,10 +375,19 @@ footer {
   background-color: #32545f9f;
   gap: 8px;
 }
+header > nav > div > ul > li{
+  display: none;
+}
+header > nav > div > img {
+  display: flex;
+}
+
 
 main > :first-child {
   height: 900px;
 }
+
+
 
 main > :first-child > h3 {
   margin-bottom: 10px;
